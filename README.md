@@ -32,6 +32,7 @@ No secret keys live in the frontend.
 | `/` | Main dashboard: overall status, 5 sensor cards, active alerts |
 | `/sensors/[sensor]` | Per-sensor detail: current value, history chart, calibration |
 | `/alerts` | Alert history with filters + counters |
+| `/reports` | Time-range water-quality report, sensor statistics, alert summary, CSV export and print |
 | `/system` | Device, GSM, backend and database health |
 
 ## Real-time strategy: polling

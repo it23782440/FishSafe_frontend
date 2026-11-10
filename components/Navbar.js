@@ -5,13 +5,14 @@ import { usePathname } from 'next/navigation';
 const links = [
   { href: '/', label: 'Dashboard' },
   { href: '/alerts', label: 'Alerts' },
+  { href: '/reports', label: 'Reports' },
   { href: '/system', label: 'System' },
 ];
 
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <header className="bg-white border-b border-slate-200 sticky top-0 z-20">
+    <header className="bg-white border-b border-slate-200 sticky top-0 z-20 print:hidden">
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <span className="text-2xl">🐟</span>

@@ -30,3 +30,18 @@ body {
 .live-dot {
   animation: livePulse 1.6s ease-in-out infinite;
 }
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .report-page {
+    max-width: none;
+  }
+
+  .report-page .card {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}

@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <main className="max-w-7xl mx-auto px-4 py-6">{children}</main>
-        <footer className="max-w-7xl mx-auto px-4 py-8 text-center text-xs text-slate-400">
+        <footer className="max-w-7xl mx-auto px-4 py-8 text-center text-xs text-slate-400 print:hidden">
           FishSafe · NTP/26/09 · Real-time freshwater aquaculture monitoring
         </footer>
       </body>
