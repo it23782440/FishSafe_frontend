@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { FishLogo, GridIcon, FishIcon, ActivityIcon, BarChartIcon, BellIcon, TableIcon, SettingsIcon, XIcon, FileTextIcon } from './Icons';
+import { FishLogo, GridIcon, FishIcon, ActivityIcon, BarChartIcon, BellIcon, TableIcon, SettingsIcon, XIcon, FileTextIcon, TargetIcon } from './Icons';
 import { useDeviceStatus, useUnreadCount } from '@/lib/hooks';
 
 const ITEMS = [
@@ -12,6 +12,7 @@ const ITEMS = [
   { href: '/alerts', label: 'Alerts & Notifications', icon: BellIcon, match: (p) => p.startsWith('/alerts'), badge: true },
   { href: '/history', label: 'Historical Records', icon: TableIcon, match: (p) => p.startsWith('/history') },
   { href: '/reports', label: 'Reports', icon: FileTextIcon, match: (p) => p.startsWith('/reports') },
+  { href: '/feasibility', label: 'Harvest Feasibility', icon: TargetIcon, match: (p) => p.startsWith('/feasibility') },
   { href: '/settings', label: 'Settings', icon: SettingsIcon, match: (p) => p.startsWith('/settings') },
 ];
 

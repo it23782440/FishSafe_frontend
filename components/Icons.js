@@ -196,5 +196,6 @@ export const SignalIcon = (p) => (<Svg {...p}><path d="M2 20h.01M7 20v-4M12 20v-
 export const MailCheckIcon = (p) => (<Svg {...p}><path d="M22 13V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12c0 1.100.9 2 2 2h8" /><path d="m22 7-8.970 5.700a1.940 1.940 0 0 1-2.060 0L2 7M16 19l2 2 4-4" /></Svg>);
 export const ClockIcon = (p) => (<Svg {...p}><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></Svg>);
 
-export const FileTextIcon = (p) => (<Svg {...p}><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z" /><path d="M14 3v5h5M9 13h6M9 17h6M9 9h2" /></Svg>);
+export const TargetIcon = (p) => (<Svg {...p}><circle cx="12" cy="12" r="9" /><circle cx="12" cy="12" r="5" /><circle cx="12" cy="12" r="1" /></Svg>);
+export const FileTextIcon =(p) => (<Svg {...p}><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8Z" /><path d="M14 3v5h5M9 13h6M9 17h6M9 9h2" /></Svg>);
 export const PrinterIcon = (p) => (<Svg {...p}><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" /><rect x="6" y="14" width="12" height="8" rx="1" /></Svg>);
