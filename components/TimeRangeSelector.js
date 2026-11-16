@@ -1,25 +1,25 @@
 'use client';
 
 const RANGES = [
-  { value: '1h', label: '1H' },
-  { value: '6h', label: '6H' },
-  { value: '24h', label: '24H' },
-  { value: '7d', label: '7D' },
-  { value: '30d', label: '30D' },
+  { value: '1h', label: '1H', full: 'Last hour' },
+  { value: '6h', label: '6H', full: 'Last 6 hours' },
+  { value: '24h', label: '24H', full: 'Last 24 hours' },
+  { value: '7d', label: '7D', full: 'Last 7 days' },
+  { value: '30d', label: '30D', full: 'Last 30 days' },
 ];
+
+export const rangeLabel = (v) => RANGES.find((r) => r.value === v)?.full || v;
 
 export default function TimeRangeSelector({ value, onChange }) {
   return (
-    <div className="inline-flex rounded-lg border border-slate-200 bg-white p-1">
+    <div className="segmented" role="group" aria-label="Time range">
       {RANGES.map((r) => (
         <button
           key={r.value}
+          type="button"
+          aria-pressed={value === r.value}
+          title={r.full}
           onClick={() => onChange(r.value)}
-          className={`px-3 py-1 text-sm rounded-md font-medium transition ${
-            value === r.value
-              ? 'bg-sky-600 text-white'
-              : 'text-slate-600 hover:bg-slate-100'
-          }`}
         >
           {r.label}
         </button>
